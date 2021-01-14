@@ -1,5 +1,12 @@
 # RKDialogbox
 
+  <table>
+    <tr>
+      <td><img src='./Images/Image01.png'></td>
+      <td><img src='./Images/Image02.png'></td>
+    </tr>
+  </table>
+  
 ## Installation
 
 RKDialogbox is available through [CocoaPods](https://cocoapods.org). To install
