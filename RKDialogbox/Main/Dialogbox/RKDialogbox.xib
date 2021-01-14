@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RKDialogbox" customModule="RKDialogbox" customModuleProvider="target">
+            <connections>
+                <outlet property="cardView" destination="tLm-tZ-2EA" id="FOW-VY-IBC"/>
+                <outlet property="closeButton" destination="3c3-qp-5gi" id="58a-bK-LOZ"/>
+                <outlet property="contentView" destination="ykf-2g-tOV" id="ReS-QZ-jU6"/>
+                <outlet property="firstButton" destination="SDO-wi-4BM" id="mAz-kB-kqK"/>
+                <outlet property="messageLabel" destination="hSk-Ow-8P5" id="87g-7t-p8p"/>
+                <outlet property="secondButton" destination="tF4-m9-5b5" id="xHW-Qp-bN6"/>
+                <outlet property="titleLabel" destination="syE-5Q-SAF" id="PyR-4i-3O4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ykf-2g-tOV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLm-tZ-2EA" userLabel="Card View" customClass="RKView" customModule="RKDialogbox" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="566.5" width="414" height="329.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="q60-fl-j9i">
+                            <rect key="frame" x="16" y="20" width="382" height="259.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uki-jl-Scc">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
+                                    <subviews>
+                                        <button opaque="NO" tag="106" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3c3-qp-5gi">
+                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="3c3-qp-5gi" secondAttribute="height" multiplier="1:1" id="U52-Cy-lye"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                                            <state key="normal" image="framework_close"/>
+                                            <connections>
+                                                <action selector="dismissTouchUpInside:" destination="-1" eventType="touchUpInside" id="nob-bu-Br6"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="106" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syE-5Q-SAF" userLabel="title Label">
+                                            <rect key="frame" x="28" y="0.0" width="354" height="20"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="4la-0f-jYI"/>
+                                    </constraints>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="106" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSk-Ow-8P5" userLabel="message Label">
+                                    <rect key="frame" x="0.0" y="36" width="382" height="167.5"/>
+                                    <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non erat mollis leo tristique cursus vel non odio. Nam eget consectetur orci. Aenean bibendum, sem quis semper blandit, nibh quam vulputate mauris, a malesuada nisi massa ut nulla. Cras tincidunt eros at massa scelerisque pharetra. Fusce eu orci odio. Phasellus ligula erat, finibus vitae lobortis id, pellentesque quis metus. Nullam posuere nisl nec tincidunt faucibus. Ut tristique consequat elit. Quisque maximus nunc dolor, ut tristique odio condimentum vel.</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EbJ-rD-qEZ">
+                                    <rect key="frame" x="0.0" y="219.5" width="382" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" clipsSubviews="YES" tag="151" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-wi-4BM" userLabel="first Button" customClass="RKView" customModule="RKDialogbox" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="187" height="40"/>
+                                            <color key="backgroundColor" red="0.0" green="0.19215686269999999" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <state key="normal" title="First Button">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="firstButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="kGC-qq-Fn2"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" clipsSubviews="YES" tag="163" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tF4-m9-5b5" userLabel="second Button" customClass="RKView" customModule="RKDialogbox" customModuleProvider="target">
+                                            <rect key="frame" x="195" y="0.0" width="187" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <state key="normal" title="Second Button">
+                                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="secondButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="zC8-2b-7Uy"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="DRw-1H-57J"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="guK-ZI-nFM"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="q60-fl-j9i" firstAttribute="top" secondItem="tLm-tZ-2EA" secondAttribute="top" constant="20" id="dqX-mI-L6m"/>
+                        <constraint firstItem="guK-ZI-nFM" firstAttribute="bottom" secondItem="q60-fl-j9i" secondAttribute="bottom" constant="16" id="pTQ-k9-paJ"/>
+                        <constraint firstItem="q60-fl-j9i" firstAttribute="leading" secondItem="tLm-tZ-2EA" secondAttribute="leading" constant="16" id="rFe-bY-Nyb"/>
+                        <constraint firstAttribute="trailing" secondItem="q60-fl-j9i" secondAttribute="trailing" constant="16" id="roT-6P-ONl"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="tLm-tZ-2EA" firstAttribute="leading" secondItem="ykf-2g-tOV" secondAttribute="leading" id="4x1-oG-1mT"/>
+                <constraint firstAttribute="trailing" secondItem="tLm-tZ-2EA" secondAttribute="trailing" id="Yh2-Sw-MWB"/>
+                <constraint firstAttribute="bottom" secondItem="tLm-tZ-2EA" secondAttribute="bottom" id="hN4-la-Ayy"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="jOs-Sy-zHF" appends="YES" id="D0I-Ey-I6Z"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="155"/>
+        </view>
+        <tapGestureRecognizer id="jOs-Sy-zHF">
+            <connections>
+                <action selector="dismissTouchUpInside:" destination="-1" id="n6p-ix-GCb"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="SDO-wi-4BM">
+            <size key="intrinsicContentSize" width="71" height="28"/>
+        </designable>
+        <designable name="tF4-m9-5b5">
+            <size key="intrinsicContentSize" width="90" height="28"/>
+        </designable>
+        <designable name="tLm-tZ-2EA">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="framework_close" width="512" height="512"/>
+    </resources>
+</document>
