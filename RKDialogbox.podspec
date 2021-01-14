@@ -1,10 +1,10 @@
 Pod::Spec.new do |spec|
   spec.name                   = "RKDialogbox"
-  spec.version                = "0.1.1"
+  spec.version                = "0.1.2"
   spec.summary                = "Custom UI"
   spec.description            = "Custom UIAlertController"
   spec.homepage               = "https://github.com/merichle/RKDialogbox"
-  spec.social_media_url       = "https://twitter.com/Merichle"
+  spec.social_media_url       = "http://twitter.com/Merichle"
   spec.license                = "MIT"
   spec.author                 = { "Ramazan Karami" => "ramazan.karami@gmail.com" }
   spec.platform               = :ios, "11.0"
