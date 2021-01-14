@@ -133,8 +133,8 @@ public extension RKDialogbox {
         title: String? = "",
         message: String? = "",
         firstButtonTitle: String? = nil,
-        firstActionCallback: (() -> Void)? = nil,
-        isDismissible: Bool = true
+        isDismissible: Bool = true,
+        firstActionCallback: (() -> Void)? = nil
     ) {
         DispatchQueue.main.async {
             let rkDialogbox = RKDialogbox()
